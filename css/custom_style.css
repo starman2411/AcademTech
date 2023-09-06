@@ -33,11 +33,14 @@
 	min-height: 33%;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 .about-wrapper {
 	display: flex;
 	min-height: 30vw;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 #about {
@@ -86,6 +89,15 @@
 	will-change: transform;
 }
 
+#portfolio {
+	padding-top: 0px;
+}
+.portfolio-row {
+	display:flex; 
+	flex-wrap: wrap-reverse; 
+	flex-direction: row;
+}
+
 @media (min-width: 2400px) {
 .card {
 	height: 58px;
@@ -112,6 +124,16 @@
 .card {
 	height: 58px;
 	width: 58px;
+}
+}
+
+@media (max-width: 768px) {
+.tile-wrapper {
+	margin: 10px;
+}
+
+.tiles-wrapper{
+	margin-bottom: 20px;
 }
 }
 
